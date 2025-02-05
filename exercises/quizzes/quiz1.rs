@@ -7,13 +7,22 @@
 // - An apple costs 2 rustbucks.
 // - However, if Mary buys more than 40 apples, the price of each apple in the
 // entire order is reduced to only 1 rustbuck!
-
+// 사과는 2원
+// 40개 초과 해서 사면 모든 사과 1원 깍아줌 레전드할인;;;
 // TODO: Write a function that calculates the price of an order of apples given
 // the quantity bought.
 // fn calculate_price_of_apples(???) -> ??? { ??? }
 
 fn main() {
     // You can optionally experiment here.
+}
+
+fn calculate_price_of_apples(apples: i32) -> i32 {
+    if apples <= 40 {
+        apples * 2
+    } else {
+        apples
+    }
 }
 
 // Don't change the tests!
